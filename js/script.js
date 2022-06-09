@@ -61,7 +61,7 @@ function playAudio(name){
 					$('.game_button').prop('disabled', false);
 					$('#play').prop('disabled', true);
 			} 	else {
-					$('#plot').html(rounds[round_count++].next);
+					mirror(rounds[round_count++].next);
 					$('#play').prop('disabled', false);
 					checkFinal();
 			}
