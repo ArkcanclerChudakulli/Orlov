@@ -8,7 +8,11 @@ let round_count = 0;
 let isRound = false;
 
 function robot(){
-	audioPath = "audio/Robot/";
+	if(audioPath == 'audio/') {
+		audioPath = "audio/Robot/";
+	} else {
+		audioPath = "audio/";
+	}
 }
 
 function mirror(txt, speed = 20, color){
