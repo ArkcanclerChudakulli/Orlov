@@ -7,6 +7,10 @@ let micro_count = 0;
 let round_count = 0;
 let isRound = false;
 
+function robot(){
+	audioPath = "audio/Robot/";
+}
+
 function mirror(txt, speed = 20, color){
 $( "#mirror_txt" ).replaceWith( '<marquee id="mirror_txt" class="font text-center align-middle ' + color + '" direction="up" scrolldelay="1" scrollamount="' + speed + '" behavior="slide"><font id="road_text">' + txt + '</font></marquee>' );
 }
