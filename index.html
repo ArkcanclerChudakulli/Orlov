@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/bootstrap.min.css" rel="stylesheet" ></script>
+<link href="css/style.css" rel="stylesheet" ></script>
+<script src="js/script.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body onload='load()'>
+
+<button id="play" type="button" class="btn btn-success btn-lg btn-block" onclick="play()">Играть!</button>
+
+<div id="container">	
+
+	<div id="award" class="col-sm-2">
+		<img src="img/da_vinchi.png" width="245px" height="177px"/>
+		<div id="brush_count" class="circle">0</div>
+		<img src="img/oscar.png" width="220px" height="165px"/>
+		<div id="mask_count" class="circle">0</div>
+		 <img class="hint" src="img/grammy.png" width="245px" height="245px" onclick="robot()"/>
+		 <div id="micro_count" class="circle">0</div>
+	</div>
+	
+	<div class="col-sm-8">
+		<div id="mirror">
+			<marquee id="mirror_txt" class="font text-center align-middle" direction="up" scrolldelay="1" scrollamount="15" behavior="slide">
+				<font id="road_text"></font>
+			</marquee>
+		</div>
+		<div id="game">	
+			<button class="game_button" disabled="disabled" onclick="brush()"><img class="hint" src="img/brush.png" width="313px" height="313px" /></button>
+			<button class="game_button" disabled="disabled" onclick="mask()"><img class="hint" src="img/mask.jpg" width="313px" height="313px" /></button>
+			<button class="game_button" disabled="disabled" onclick="micro()"><img class="hint" src="img/microphone.jpg" width="313px" height="313px" /></button>
+		</div>
+		<video id="final" width="900" autoplay playsinline style="display:none" src="#"></video>
+	</div>
+	
+	<div class="col-md-1" title='Подсказка'>
+		<img id="hint" src="img/orlov_ava.jpg" width="240px" height="240px"/>
+	</div>
+	
+</div>
+	
+</body>
+</html>
